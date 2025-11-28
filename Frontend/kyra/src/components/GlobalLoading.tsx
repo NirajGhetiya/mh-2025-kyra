@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { registerLoadingSetter } from "./api/axiosInstance";
+import { registerLoadingSetter } from "../api/axiosInstance";
 import Loading from "./Loading";
 import { useLoading } from "@/contexts/LoadingContext";
 
