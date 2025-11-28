@@ -1,0 +1,17 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+sqlalchemy[asyncio]==2.0.35
+asyncpg==0.29.0
+passlib[bcrypt]==1.7.4
+python-jose[cryptography]==3.3.0
+python-multipart==0.0.9
+psycopg2-binary
+openai
+PyJWT==2.8.0
+pydantic
+email-validator
+jinja2
+weasyprint 
+aiofiles
+pandas==2.2.1
+requests
