@@ -12,6 +12,8 @@ import GlobalLoading from "./components/GlobalLoading";
 import UserKYC from "./pages/UserKYC";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Dashboard from "./pages/Dashboard";
+import KYCDetail from "./pages/KYCDetail";
 
 const queryClient = new QueryClient();
 
@@ -33,7 +35,7 @@ const App = () => (
                   </PublicRoute>
                 }
               />
-               <Route
+              <Route
                 path="/login"
                 element={
                   <PublicRoute>
@@ -47,6 +49,23 @@ const App = () => (
                   <PublicRoute>
                     <Register />
                   </PublicRoute>
+                }
+              />
+
+              <Route
+                path="/admin/dashboard"
+                element={
+                  <ProtectedRoute>
+                    <Dashboard />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/admin/kyc/:id"
+                element={
+                  <ProtectedRoute>
+                    <KYCDetail />
+                  </ProtectedRoute>
                 }
               />
 
