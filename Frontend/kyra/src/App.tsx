@@ -9,6 +9,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import PublicRoute from "./components/PublicRoute";
 import { LoadingProvider } from "./contexts/LoadingContext";
 import GlobalLoading from "./components/GlobalLoading";
+import UserKYC from "./pages/UserKYC";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 
@@ -48,6 +49,9 @@ const App = () => (
                   </PublicRoute>
                 }
               />
+
+              <Route path="/user/kyc/:id" element={<UserKYC />} />
+
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </BrowserRouter>
